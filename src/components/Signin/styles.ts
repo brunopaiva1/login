@@ -21,13 +21,6 @@ export const Container = styled.div`
     }
 `;
 
-export const Form = styled.form`
-    margin: 0 auto;
-    padding: 20px;
-`;
+export const Form = styled.form``;
 
-export const Logo = styled.div`
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-`;
+export const Logo = styled.div``;
