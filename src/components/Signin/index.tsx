@@ -1,7 +1,7 @@
 import React from "react"
 import { Container } from "./styles";
 
-export const Singin=()=>{
+export const Signin=()=>{
     return(
         <Container>
 
