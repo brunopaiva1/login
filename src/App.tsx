@@ -1,13 +1,12 @@
-import React from 'react';
-import './App.css';
-import { Signin } from './components/Signin';
+import React from "react";
+import "./App.css";
+import { Signin } from "./components/Signin";
 
 function App() {
     return (
-        <div className="App">
+        <div>
             <Signin />
         </div>
     );
 }
-
 export default App;
