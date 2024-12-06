@@ -9,13 +9,13 @@ export const Container = styled.div`
     }
 
     .container1 {
-        width: 60%;
+        width: 50%;
         background: blue;
         height: 100vh;
     }
 
     .container2 {
-        width: 40%;
+        width: 50%;
         background: red;
         height: 100vh;
     }
