@@ -19,6 +19,13 @@ export const Container = styled.div`
         box-shadow: 1px 2px 3px #ccc;
         height: 100vh;
     }
+    .image{
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        display: flex; width: 100%;
+        height: 100%;
+    }
 
     .container2 {
         width: 50%;
@@ -42,6 +49,7 @@ export const Form = styled.div`
         justify-content: center;
         margin auto;
         background: #d3d3d3;
+        margin-buttom: 1rem;
     }
 `;
 

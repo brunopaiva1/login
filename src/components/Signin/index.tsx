@@ -1,6 +1,6 @@
 import React from "react"
 import { Container, Form, Logo } from "./styles";
-import { FilledInput, InputAdornment } from "@mui/material";
+import { Button, FilledInput, InputAdornment } from "@mui/material";
 import { HiOutlineUser } from "react-icons/hi"
 import { SlLock } from "react-icons/sl"
 
@@ -11,11 +11,18 @@ export const Signin = () =>{
 
            <div className="container">
             <div className="container1">CONTAINER 1</div>
+                <div className="imagem">
+                    <img src="logo612.png" 
+                    width={400}
+                    height={400}
+                    className="imagem"
+                    alt="banner" />
+                </div>
             <div className="container2">
                 <Form>
                     <Logo>
                     </Logo>
-                    <h3>Login</h3>
+                    <p>Login</p>
                         <FilledInput
                             id="filled-adornment-weight"
                             className="input"
@@ -48,6 +55,17 @@ export const Signin = () =>{
                                 </InputAdornment>
                             }
                         />
+                        <div className="buttom-checkbox">
+                            <Button variant="contained" className="buttom">
+                                Login
+                            </Button>
+                                <div>
+                                    <span>
+                                        <input type="checkbox" className="input-checkbox" />
+                                    </span>
+                                    <p>Lembrar senha.</p>
+                                </div>
+                        </div>
                 </Form>
             </div>
            </div>
