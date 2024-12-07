@@ -1,5 +1,6 @@
 import React from "react"
-import { Container } from "./styles";
+import { Container, Form, Logo } from "./styles";
+import { FilledInput } from "@mui/material";
 
 export const Signin = () =>{
     return(
@@ -7,7 +8,19 @@ export const Signin = () =>{
 
            <div className="container">
             <div className="container1">CONTAINER 1</div>
-            <div className="container2">CONTAINER 2</div>
+            <div className="container2">
+                <Form>
+                    <Logo>
+                        <h3>Login</h3>
+
+                        <FilledInput
+                            id="filled-adornment-weight"
+                            className="input"
+                            placeholder="Login"
+                        />
+                    </Logo>
+                </Form>
+            </div>
            </div>
         </Container>
     );
