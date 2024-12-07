@@ -2,6 +2,8 @@ import React from "react"
 import { Container, Form, Logo } from "./styles";
 import { FilledInput, InputAdornment } from "@mui/material";
 import { HiOutlineUser } from "react-icons/hi"
+import { SlLock } from "react-icons/sl"
+
 
 export const Signin = () =>{
     return(
@@ -23,7 +25,7 @@ export const Signin = () =>{
                                     <HiOutlineUser 
                                     style={{
                                         color: "#0563e7ba",
-                                        fontSize: "1.3rem",
+                                        fontSize: "1.5rem",
                                     }}
                                     />
                                 </InputAdornment>
@@ -35,6 +37,16 @@ export const Signin = () =>{
                             className="input"
                             type="password"
                             placeholder="Senha"
+                            endAdornment={
+                                <InputAdornment position="end">
+                                    <SlLock
+                                    style={{
+                                        color: "#0563e7ba",
+                                        fontSize: "1.5rem",
+                                    }}
+                                    />
+                                </InputAdornment>
+                            }
                         />
                 </Form>
             </div>
