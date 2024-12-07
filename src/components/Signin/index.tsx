@@ -1,6 +1,7 @@
 import React from "react"
 import { Container, Form, Logo } from "./styles";
-import { FilledInput } from "@mui/material";
+import { FilledInput, InputAdornment } from "@mui/material";
+import { HiOutlineUser } from "react-icons/hi"
 
 export const Signin = () =>{
     return(
@@ -11,14 +12,30 @@ export const Signin = () =>{
             <div className="container2">
                 <Form>
                     <Logo>
-                        <h3>Login</h3>
-
+                    </Logo>
+                    <h3>Login</h3>
                         <FilledInput
                             id="filled-adornment-weight"
                             className="input"
                             placeholder="Login"
+                            endAdornment={
+                                <InputAdornment position="end">
+                                    <HiOutlineUser 
+                                    style={{
+                                        color: "#0563e7ba",
+                                        fontSize: "1.3rem",
+                                    }}
+                                    />
+                                </InputAdornment>
+                            }
+                            
                         />
-                    </Logo>
+                        <FilledInput
+                            id="filled-adornment-weight"
+                            className="input"
+                            type="password"
+                            placeholder="Senha"
+                        />
                 </Form>
             </div>
            </div>
